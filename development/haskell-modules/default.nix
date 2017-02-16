@@ -67,7 +67,7 @@ let
       };
 
     in
-      import ./hackage-packages.nix { inherit pkgs stdenv callPackage; } self // {
+      import ./hackage-packages-lts-6.27.nix { inherit pkgs stdenv callPackage; } self // {
 
         inherit mkDerivation callPackage;
 
